@@ -1,14 +1,18 @@
 {
-    "name": "saz2har",
-    "version": "2.2.1",
+    "name": "@prantlf/saz2har",
+    "version": "v2.3.0",
     "description": "Converts SAZ file (from Fiddler) to HAR file (for Chrome).",
     "author": {
+        "name": "Ferdinand Prantl",
+        "email": "prantlf@gmail.com"
+    },
+    "contributors": [{
         "name": "Alexander Myadzel",
         "email": "myadzel@gmail.com"
-    },
-    "main": "./index.js",
+    }],
+    "main": "index.js",
     "bin": {
-        "saz2har": "./bin.js"
+        "saz2har": "bin.js"
     },
     "keywords": [
         "saz",
@@ -16,15 +20,16 @@
         "fiddler",
         "chrome",
         "parser",
+        "converter",
         "webdev",
         "devtools"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/myadzel/saz2har.git"
+        "url": "https://github.com/prantlf/saz2har.git"
     },
     "bugs": {
-        "url": "https://github.com/myadzel/saz2har/issues"
+        "url": "https://github.com/prantlf/saz2har/issues"
     },
     "dependencies": {
         "extract-zip": "2.0.0",

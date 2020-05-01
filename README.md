@@ -1,11 +1,26 @@
-# saz2har
+# @prantlf/saz2har
 
 Converts SAZ file (from Fiddler) to HAR file (for Chrome).
 
-## Install
+This fork of the original project includes the following enhancements:
 
-```console
-$ npm install saz2har
+* Runs on OSX. (Replaced `minizip` with `extract-zip`.)
+* The HAR validation can be disabled. (The current validator does not handle date-time values in some Fiddler logs well.)
+* The command-like tool is documented and prints usage instructions.
+* The dependencies are upgraded to the the most recent versions.
+
+## Installation
+
+Make sure that you use Node.js 6 or newer. Install this package locally if you want to use it programmatically:
+
+```
+$ npm i @prantlf/saz2har
+```
+
+If you want to use the command-line tool, install the package globally:
+
+```
+$ npm i -g @prantlf/saz2har
 ```
 
 ## API
@@ -18,12 +33,11 @@ $ npm install saz2har
   * `validate` - enables validation of the the HAR output (default: `true`)
 
 ```js
-var saz2har = require("saz2har");
+const saz2har = require("@prantlf/saz2har");
 
-saz2har.convert("tmp/log.saz", function (err, data) {
+saz2har.convert("tmp/log.saz", (err, data) => {
     if (err) {
-        console.error("Error: ", err);
-        return;
+        return console.error(err);
     }
     console.log(data);
 });
