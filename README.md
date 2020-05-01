@@ -1,5 +1,10 @@
 # @prantlf/saz2har
 
+[![NPM version](https://badge.fury.io/js/%40prantlf%2Fsaz2har.svg)](http://badge.fury.io/js/%40prantlf%2Fsaz2har)
+[![Build Status](https://travis-ci.org/prantlf/saz2har.png)](https://travis-ci.org/prantlf/saz2har)
+[![Dependency Status](https://david-dm.org/prantlf/saz2har.svg)](https://david-dm.org/prantlf/saz2har)
+[![devDependency Status](https://david-dm.org/prantlf/saz2har/dev-status.svg)](https://david-dm.org/prantlf/saz2har#info=devDependencies)
+
 Converts SAZ file (from Fiddler) to HAR file (for Chrome).
 
 This fork of the original project includes the following enhancements:
